@@ -11,11 +11,11 @@ var sticky = preheader.offsetHeight;
 function getSticky() {
   if (window.pageYOffset > sticky) {
     header.classList.add("sticky");
-    header.innerHTML = '<p>Cordel Moderno por <a href ="">Milton Duarte</a></p>';
+    header.innerHTML = '<p>Cordel Moderno por <a href ="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p>';
     
   } else {
     header.classList.remove("sticky");
-    header.innerHTML = '<p>Por <a href ="">Milton Duarte</a></p>'
+    header.innerHTML = '<p>Por <a href ="https://www.recantodasletras.com.br/poesias/3186743">Milton Duarte</a></p>'
     
   }
 }
