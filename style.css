@@ -37,30 +37,46 @@ a:hover{
 
 /* HEADER */
 
-header{
+#preHeader{
     background-color: black;
     color: white;
     padding: 20px;
-    margin: auto;
     text-align: center;
+    width: 100%;
 }
 
-header > h1{
+#preHeader > h1{
     font-family: var(--fonte2);
-    font-size: 4em;
     font-size: 10vw;
 }
 
-header > p{
+#sHeader{
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    width: 100%;
+}
+
+#sHeader > p{
     padding-top: 10px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    
+}
+
+.sticky + .conteudo {
+    padding-top: 102px;
 }
 
 /* BODY*/
 
 html, body{
     min-height: 100vh;
-    background-color: darkgrey;
-    font-family: var(--fonte1);
+        font-family: var(--fonte1);
 }
 
 section{
