@@ -1,0 +1,112 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: xilo;
+    src: url(fontes/Xilo\ Prosa.ttf);
+}
+
+@font-face {
+    font-family: Sriracha;
+    src: url(fontes/Sriracha-Regular.ttf);
+}
+
+:root{
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: xilo;
+    --fonte3: 'Sriracha', cursive;
+}
+
+/* GERAL */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    font-family: xilo;
+    font-size: 1.5em;
+    color: white;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* HEADER */
+
+header{
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+header > h1{
+    font-family: var(--fonte2);
+    font-size: 4em;
+    font-size: 10vw;
+}
+
+header > p{
+    padding-top: 10px;
+}
+
+/* BODY*/
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgrey;
+    font-family: var(--fonte1);
+}
+
+section{
+    padding: 10vh 0 10vh 3vw;
+    line-height: 1.7em;
+    font-family: var(--fonte3);
+    font-size: 3vw;
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+.normal{
+    background-color: white;
+    color: black;
+}
+
+.imagem{
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.548);
+    background-color: blue;
+    color: white;
+    background-size: cover; 
+    background-attachment: fixed;
+    background-position: right center;
+}
+
+.imagem > p{
+    background-color: rgba(0, 0, 0, 0.24);
+    display: inline-block;
+    padding: 5px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#img01{
+    background-image: url(imagens/background001.jpg);
+}
+
+#img02{
+    background-image: url(imagens/background002.jpg);
+}
+
+/* FOOTER */
+
+footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
