@@ -42,7 +42,7 @@ a:hover{
     color: white;
     padding: 20px;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 #preHeader > h1{
@@ -55,7 +55,7 @@ a:hover{
     color: white;
     padding: 10px;
     text-align: center;
-    width: 100%;
+    width: 100vw;
 }
 
 #sHeader > p{
@@ -76,7 +76,10 @@ a:hover{
 
 html, body{
     min-height: 100vh;
-        font-family: var(--fonte1);
+    font-family: var(--fonte1);
+    max-width: 100%;
+    overflow-x: hidden;
+
 }
 
 section{
